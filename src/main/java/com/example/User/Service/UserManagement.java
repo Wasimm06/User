@@ -10,6 +10,7 @@ public interface UserManagement {
 
     CreateUserResponseDTO createUser(CreateUserRequestDTO requestDTO);
 
+    
     ListUserResponseDTO listUsers(String filter, int startIndex, int count);
 
     CreateUserResponseDTO updateUser(String id, UpdateUserRequestDTO requestDTO);
