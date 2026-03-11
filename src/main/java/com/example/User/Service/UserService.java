@@ -6,7 +6,7 @@ import com.example.User.DTO.UpdateUserRequestDTO;
 import com.example.User.DTO.ListUserResponseDTO;
 import com.example.User.DTO.ShowUserDetailResponseDTO;
 
-public interface UserManagement {
+public interface UserService {
 
     CreateUserResponseDTO createUser(CreateUserRequestDTO requestDTO);
 
