@@ -18,11 +18,11 @@ public class ListUserResponseDTO {
     private List<String> schemas;
 
     // Pagination fields
-    private Integer startIndex;
-    private Integer itemsPerPage;
+    private int startIndex;
+    private int itemsPerPage;
 
     // Required - total count
-    private Integer totalResults;
+    private int totalResults;
 
     // Must be exactly "Resources" as per SCIM spec
     @JsonProperty("Resources")

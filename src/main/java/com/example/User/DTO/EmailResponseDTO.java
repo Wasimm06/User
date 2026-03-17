@@ -15,3 +15,5 @@ public class EmailResponseDTO {
     private Boolean primary;
     private String value;
 }
+
+

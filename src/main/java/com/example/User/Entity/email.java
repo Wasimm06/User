@@ -1,16 +1,8 @@
 package com.example.User.Entity;
 
 import java.util.UUID;
-
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import jakarta.persistence.*;
+import lombok.*;
 
 @Entity
 @Data
@@ -22,12 +14,9 @@ public class email {
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
 
-    @Column(name = "type")
-    private String type;   // work / home / other
-
-    @Column(name = "is_primary")
-    private Boolean primary;
-
-    @Column(name = "email_value", nullable = false, unique = true)
     private String value;
+
+    private String type;
+
+    private Boolean primaryEmail;
 }
