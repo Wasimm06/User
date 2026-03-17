@@ -310,12 +310,6 @@ public class UserManagementServiceImpl implements UserManagementService {
             response.setAddresses(addrResponses);
 
         }
-        return response;
-
-
-        
+        return response; 
     }
-
-
-    
 }

@@ -2,6 +2,8 @@ package com.example.User.DTO;
 
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -22,6 +24,7 @@ public class CreateUserRequestDTO {
     private List<EmailDTO> emails;
     private List<PhoneNumberDTO> phoneNumbers;
     private List<AddressDTO> addresses;
+    @JsonProperty("entitlements") 
     private List<EntitlementDTO> entitlements;
 
     private MetaDTO meta;

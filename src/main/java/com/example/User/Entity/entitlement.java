@@ -13,6 +13,6 @@ public class entitlement {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
-
+    @Column(name = "entitlement_value", nullable = false)
     private String value;
 }
