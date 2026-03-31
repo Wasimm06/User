@@ -14,3 +14,4 @@ public class OperationDTO {
     private String path;
     private List<ValueDTO> value;
 }
+

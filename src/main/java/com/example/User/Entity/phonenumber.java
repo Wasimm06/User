@@ -13,8 +13,7 @@ public class phonenumber {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
-    
-    @Column(name = "phone_value")
+
     private String value;
 
     private String type;

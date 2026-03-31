@@ -13,6 +13,11 @@ public class entitlement {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
-    @Column(name = "entitlement_value", nullable = false)
+
     private String value;
+
+    public void setResource(Resource resource) {
+
+        throw new UnsupportedOperationException("Unimplemented method 'setResource'");
+    }
 }

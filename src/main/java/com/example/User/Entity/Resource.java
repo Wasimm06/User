@@ -17,6 +17,8 @@ public class Resource {
     private String externalId;
     private String userName;
     private Boolean active;
+    private String preferredLanguage;
+    private String timezone;
 
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "name_id")

@@ -14,7 +14,6 @@ public class email {
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
 
-    @Column(name = "email_value", nullable = false)
     private String value;
 
     private String type;
