@@ -1,12 +1,9 @@
 package com.example.User.Controller;
-
 import java.util.UUID;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
 import com.example.User.DTO.CreateUserRequestDTO;
 import com.example.User.DTO.CreateUserResponseDTO;
 import com.example.User.DTO.ListUserResponseDTO;
@@ -73,6 +70,3 @@ public class UserManagementController {
 }
 
 }
-
-
-
